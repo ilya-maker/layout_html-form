@@ -9,32 +9,39 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" name="form_data">
-    <fieldset class="margin_for_input_block">
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        name="form_data">
+    <fieldset
+      class="margin_for_input_block">
       <legend>Personal information</legend>
-      <label for="surname" class="margin_for_input">
+      <label for="surname"
+             class="margin_for_input">
         Surname:
         <input minlength = "3"
                maxlength = "40"
-               required placeholder="surname"
+               required
+               placeholder="surname"
                id="surname"
                type="text"
                name="surname"
                autocomplete="off">
       </label>
 
-      <label for="name" class="margin_for_input">
+      <label for="name"
+             class="margin_for_input">
         Name:
         <input id="name"
                name="name"
                minlength = "3"
                maxlength = "40"
-               required placeholder="name"
+               required
+               placeholder="name"
                type="text"
                autocomplete="off">
       </label>
 
-      <label for="age" class="margin_for_input">
+      <label for="age"
+             class="margin_for_input">
         How old are You?
         <input id="age"
                name="age"
@@ -43,7 +50,8 @@
                max="90">
       </label>
 
-      <label for="birth" class="margin_for_input">
+      <label for="birth"
+             class="margin_for_input">
       Full date of birth:
       <input id="birth"
              type="date"
@@ -58,16 +66,20 @@
       </label>
     </fieldset>
 
-    <fieldset class="margin_for_input_block">
+    <fieldset
+      class="margin_for_input_block">
       <legend>Registration</legend>
-      <label for="E-mail" class="margin_for_input">E-mail:
+      <label for="E-mail"
+             class="margin_for_input">
+        E-mail:
       <input id="E-mail"
              type="email"
              name="email"
              placeholder="email@example.com">
       </label>
 
-      <label for="password">Password:
+      <label for="password">
+        Password:
         <input
           minlength = "3"
           maxlength = "40"
@@ -80,29 +92,30 @@
       </label>
     </fieldset>
 
-    <fieldset class="margin_for_input_block">
+    <fieldset
+      class="margin_for_input_block">
       <legend>An interesting fact about you!</legend>
+        <label
+          class="margin_for_input">
+          Do you love cats?
+          <input type="radio"
+                 name="cats">
+          Yes
+          <input type="radio"
+                 name="cats">
+          No
+        </label>
+
 
       <div class="margin_for_input">
-        <label>
-        Do you love cats?
-        <input type="radio"
-               name="cats">
-        Yes
-        <input type="radio"
-               name="cats">
-        No
-        </label>
-      </div>
-
-
-      <div class="margin_for_input">What is your favorite color?
+        What is your favorite color?
       <input type="color"
              name="color"
              value="#000">
       </div>
 
-      <div class="margin_for_input">What time do you go to bed?
+      <div class="margin_for_input">
+        What time do you go to bed?
       <input type="time"
              step="1"
              name="bedtime"
@@ -127,13 +140,22 @@
                  value="0">
     </fieldset>
 
-    <fieldset class="margin_for_input_block">
+    <fieldset
+      class="margin_for_input_block">
       <legend>Additional info:</legend>
-      <label class="margin_for_input">
-      Comments: <textarea name="comment" cols="17" rows="2"></textarea>
+      <label
+        class="margin_for_input">
+      Comments:
+        <textarea
+        name="comment"
+        cols="17"
+        rows="2">
+        </textarea>
       </label>
       Would you recommend us?
-      <select multiple size="1" name="recommend">
+      <select
+        multiple size="1"
+        name="recommend">
         <option>yes</option>
         <option>no</option>
       </select>
